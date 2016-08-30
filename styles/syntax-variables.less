@@ -18,7 +18,8 @@
 // General colors
 @syntax-text-color: @FG;
 @syntax-cursor-color: @BLACK;
-@syntax-selection-color: fade(@YELLOW, 50%);
+// @syntax-selection-color: fade(@YELLOW, 50%);
+@syntax-selection-color: fade(@BLACK, 10%);
 @syntax-background-color: @BG;
 
 // Guide colors
@@ -35,9 +36,9 @@
 @syntax-gutter-text-color-selected: @FG;
 @syntax-gutter-background-color: darken(@BG, 3%);
 @syntax-gutter-background-color-selected: fade(@YELLOW, 50%);
+@syntax-gutter-background-color-selected: fade(@BLACK, 10%);
 
 // For git diff info. i.e. in the gutter
-// These are static and were not extracted from your textmate theme
 @syntax-color-renamed: @BLUE;
 @syntax-color-added: @GREEN;
 @syntax-color-modified: @ORANGE;

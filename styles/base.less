@@ -95,7 +95,6 @@ atom-text-editor.is-focused .line.cursor-line,
 }
 
 .keyword.operator {
-  font-weight: bold;
   color: @GRAY;
 }
 
@@ -199,7 +198,8 @@ atom-text-editor.is-focused .line.cursor-line,
   color: @PURPLE;
 }
 
-.markup.heading .punctuation.definition.heading,
+.markup.heading,
+.punctuation.definition.heading,
 .entity.name.section {
   font-weight: bold;
   color: @BLUE;
@@ -221,7 +221,7 @@ atom-text-editor.is-focused .line.cursor-line,
   color: @PURPLE;
 }
 
-.markup.raw.inline {
+.markup.raw {
   color: @CYAN;
 }
 
@@ -230,15 +230,16 @@ atom-text-editor.is-focused .line.cursor-line,
   color: @BLACK;
 }
 
+.gfm .link,
 .meta.link {
   color: @BLUE;
 }
 
-.markup.list {
+.gfm .list {
   color: @ORANGE;
 }
 
-.markup.quote {
+.gfm .quote {
   color: @YELLOW;
 }
 
@@ -246,15 +247,15 @@ atom-text-editor.is-focused .line.cursor-line,
   color: @YELLOW;
 }
 
-.markup.inserted {
+.gfm .inserted {
   color: @GREEN;
 }
 
-.markup.deleted {
+.gfm .deleted {
   color: @RED;
 }
 
-.markup.changed {
+.gfm .changed {
   color: @YELLOW;
 }
 
