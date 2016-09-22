@@ -1,7 +1,7 @@
 {
   "name": "flat-light-syntax",
   "theme": "syntax",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "A syntax theme based on the Flat UI colors",
   "keywords": [
     "syntax",
