@@ -3,9 +3,9 @@
 
 @FG: #5c668e;
 @BG: #ebedf3;
-@WHITE: #f8f8f8;
+@WHITE: #fff;
 @GRAY: #9a9ba0;
-@BLACK: #222222;
+@BLACK: #222;
 @RED: #e74c3c;
 @GREEN: #27ae60;
 @BLUE: #3498db;
@@ -13,7 +13,7 @@
 @ORANGE: #e67e22;
 @PURPLE: #9b59b6;
 @CYAN: #16a085;
-@NO_: #ff00ff;
+@NO_: #f0f;
 
 // General colors
 @syntax-text-color: @FG;
@@ -27,14 +27,16 @@
 @syntax-invisible-character-color: fade(@FG, 25%);
 
 // For find and replace markers
-@syntax-result-marker-color: @syntax-text-color;
-@syntax-result-marker-color-selected: @syntax-cursor-color;
+@syntax-result-marker-color: fade(@BLACK, 30%);
+@syntax-result-marker-color-selected: fade(@BLACK, 90%);
 
 // Gutter colors
 @syntax-gutter-text-color: @FG;
 @syntax-gutter-background-color: darken(@BG, 2%);
-@syntax-gutter-text-color-current: @WHITE;
-@syntax-gutter-background-color-current: @FG;
+
+@syntax-gutter-text-color-current: @BLACK;
+@syntax-gutter-background-color-current: transparent;
+
 @syntax-gutter-text-color-selected: @FG;
 @syntax-gutter-background-color-selected: @syntax-selection-color;
 

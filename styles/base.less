@@ -31,13 +31,12 @@
   color: @syntax-invisible-character-color;
 }
 
-:host .search-results .marker .region {
-  background-color: transparent;
-  border: @syntax-result-marker-color;
+:host .highlight.find-result .region {
+  border: 1px solid @syntax-result-marker-color !important;
 }
 
-:host .search-results .marker.current-result .region {
-  border: @syntax-result-marker-color-selected;
+:host .highlight.current-result .region {
+  border: 2px solid @syntax-result-marker-color-selected !important;
 }
 
 :host(.is-focused) .cursor {
@@ -97,7 +96,7 @@
 
 .keyword.operator {
   font-weight: normal;
-  color: @BLACK;
+  color: @GRAY;
 }
 
 .keyword {
