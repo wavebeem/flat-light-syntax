@@ -16,6 +16,7 @@
 }
 
 :host .gutter .line-number.cursor-line-no-selection {
+  background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
@@ -44,7 +45,7 @@
   border-width: 2px;
 }
 
-:host(.is-focused) .selection .region {
+:host .selection .region {
   background-color: @syntax-selection-color;
 }
 
@@ -57,7 +58,7 @@
   border-right: 1px solid fade(@FG, 15%);
 }
 
-:host(.is-focused) .line-number.cursor-line-no-selection {
+:host .gutter .line-number.cursor-line-no-selection {
   background-color: @syntax-gutter-background-color-current;
   color: @syntax-gutter-text-color-current;
 }
