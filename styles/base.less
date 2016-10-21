@@ -32,12 +32,12 @@
 }
 
 :host .search-results .marker .region {
-  background-color: transparent;
-  border: @syntax-result-marker-color;
+  background-color: @syntax-result-marker-color !important;
+  border: 0;
 }
 
 :host .search-results .marker.current-result .region {
-  border: @syntax-result-marker-color-selected;
+  border: 2px solid @syntax-result-marker-color-selected;
 }
 
 :host(.is-focused) .cursor {
@@ -55,10 +55,10 @@
 
 .gutter-container {
   margin-right: 1px;
-  border-right: 1px solid fade(@FG, 15%);
 }
 
 :host(.is-focused) .line-number.cursor-line-no-selection {
+  font-weight: bold;
   background-color: @syntax-gutter-background-color-current;
   color: @syntax-gutter-text-color-current;
 }

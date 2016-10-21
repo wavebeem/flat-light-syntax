@@ -2,7 +2,7 @@
 // include a syntax-variables.less file.
 
 @FG: #5c668e;
-@BG: #ebedf3;
+@BG: #fafafa;
 @WHITE: #f8f8f8;
 @GRAY: #9a9ba0;
 @BLACK: #222222;
@@ -15,17 +15,18 @@
 @CYAN: #16a085;
 @NO_: #ff00ff;
 
+// One Light/Dark uses @syntax-background-color to control the UI color
+
 // General colors
 @syntax-text-color: @FG;
-@syntax-cursor-color: @BLACK;
-// @syntax-selection-color: fade(@YELLOW, 50%);
-@syntax-selection-color: fade(@YELLOW, 30%);
 @syntax-background-color: @BG;
+@syntax-cursor-color: @BLACK;
+@syntax-selection-color: fade(@YELLOW, 30%);
 
 // Guide colors
-@syntax-wrap-guide-color: fade(@FG, 25%);
-@syntax-indent-guide-color: fade(@FG, 25%);
-@syntax-invisible-character-color: fade(@FG, 25%);
+@syntax-wrap-guide-color: fade(@FG, 10%);
+@syntax-indent-guide-color: fade(@FG, 10%);
+@syntax-invisible-character-color: fade(@FG, 15%);
 
 // For find and replace markers
 @syntax-result-marker-color: @syntax-text-color;
@@ -34,8 +35,8 @@
 // Gutter colors
 @syntax-gutter-text-color: @FG;
 @syntax-gutter-background-color: darken(@BG, 2%);
-@syntax-gutter-text-color-current: @WHITE;
-@syntax-gutter-background-color-current: @FG;
+@syntax-gutter-text-color-current: @BLACK;
+@syntax-gutter-background-color-current: darken(@BG, 5%);
 @syntax-gutter-text-color-selected: @FG;
 @syntax-gutter-background-color-selected: @syntax-selection-color;
 
