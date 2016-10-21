@@ -3,9 +3,9 @@
 
 @FG: #5c668e;
 @BG: #fafafa;
-@WHITE: #f8f8f8;
+@WHITE: #fff;
 @GRAY: #9a9ba0;
-@BLACK: #222222;
+@BLACK: #222;
 @RED: #e74c3c;
 @GREEN: #27ae60;
 @BLUE: #3498db;
@@ -13,7 +13,7 @@
 @ORANGE: #e67e22;
 @PURPLE: #9b59b6;
 @CYAN: #16a085;
-@NO_: #ff00ff;
+@NO_: #f0f;
 
 // One Light/Dark uses @syntax-background-color to control the UI color
 
@@ -29,8 +29,8 @@
 @syntax-invisible-character-color: fade(@FG, 15%);
 
 // For find and replace markers
-@syntax-result-marker-color: @syntax-text-color;
-@syntax-result-marker-color-selected: @syntax-cursor-color;
+@syntax-result-marker-color: fade(@BLACK, 10%);
+@syntax-result-marker-color-selected: fade(@BLACK, 40%);
 
 // Gutter colors
 @syntax-gutter-text-color: @FG;

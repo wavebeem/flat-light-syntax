@@ -16,6 +16,7 @@
 }
 
 :host .gutter .line-number.cursor-line-no-selection {
+  background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
@@ -31,13 +32,15 @@
   color: @syntax-invisible-character-color;
 }
 
-:host .search-results .marker .region {
+:host .highlight.find-result .region {
   background-color: @syntax-result-marker-color !important;
-  border: 0;
+  border: 0 !important;
+  border-radius: 0 !important;
 }
 
-:host .search-results .marker.current-result .region {
-  border: 2px solid @syntax-result-marker-color-selected;
+:host .highlight.current-result .region {
+  border: 1px solid @syntax-result-marker-color-selected !important;
+  border-radius: 0 !important;
 }
 
 :host(.is-focused) .cursor {
@@ -45,7 +48,7 @@
   border-width: 2px;
 }
 
-:host(.is-focused) .selection .region {
+:host .selection .region {
   background-color: @syntax-selection-color;
 }
 
@@ -74,7 +77,6 @@
 
 .comment,
 .punctuation.definition.comment {
-  font-style: italic;
   color: @GRAY;
 }
 
